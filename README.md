@@ -11,7 +11,7 @@ A 2D fluid simulation (Smoothed-Particle Hydrodynamics) in C++ in which six neig
 - Insertion sort did not scale: 430.6 s vs. 4.0 s with radix sort for 10 million particles.
 - Memory, not compute, was the limit: on the 8 GB test machine it ran out at around 36 million particles. A delta-encoding of the neighbor lists saved about 57.5 % of their memory.
 
-**Demo videos:** [breaking dam](simulation_videos/breaking_dam_wide100k.mp4) · [winding channel](simulation_videos/downward_flow100k.mp4) · [tsunami](simulation_videos/tsunami100k.mp4) · [tsunami, swinging gravity](simulation_videos/tsunami_tilting50k.mp4) · [braided channel](simulation_videos/undergroundRed80k.mp4)
+**Demo videos:** [breaking dam](simulation_videos/breaking_dam_wide100k.mp4) · [winding channel](simulation_videos/downward_flow100k.mp4) · [tsunami](simulation_videos/tsunami1M.mp4) · [braided channel](simulation_videos/undergroundRed80k.mp4)
 
 **Where to start reading:** `code/src/simulation/NeighbourSearch.cpp` (the search variants), `code/src/simulation/ParticleSimulation.cpp` (one solver step with OpenMP), and Sections 3 and 5 of the thesis.
 
